@@ -1,0 +1,9 @@
+project: invoice2data
+target: fuzz-invoice
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_pdf.py
+    libfuzzer: true
+    timeout: 20
